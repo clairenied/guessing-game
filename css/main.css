@@ -1,19 +1,133 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+
+.blue {
+  color: #003bd1 !important;
+  font-weight: 700;
+  line-height: 80%; 
+}
+
+.pink {
+  color: #ff0083 !important;
+  font-weight: bold;
+  line-height: 80%; 
+}
+
+#main, #guesses {
+  color: #003bd1 !important;
+  font-weight: bold;
+  font-size: 16px; 
+}
+
+#main {
+  margin-top: 50px;
+}
+
+#guesses {
+  margin-top: 20px;
+}
+
 .center {
   text-align: center;
 }
+
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 20px 0;
+
 }
-img {
-    display: inline;
-    width: 200px;
-    height: 100px;
+
+.guess {
+  display: inline-block;
+  background-color: #003bd1;
+  color: white;
+  padding-top: 20px;
+  width: 80px;
+  height: 80px;
+  font-size: 28px;
+  text-align: center;
+  border-radius: 50%
 }
+
+input {
+  width: 240px;
+  height: 240px;
+  font-size: 72px !important;
+  border-radius: 50%;
+  background-image: url('../html/llama.jpg');
+  background-size: 240px;
+}
+
+#input-parent {
+  margin-bottom: 30px;
+}
+
+
+::-webkit-input-placeholder {
+   color: #003bd1;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #003bd1;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #003bd1;  
+}
+:-ms-input-placeholder {  
+   color: #003bd1;  
+}
+
+
+button {
+  margin-top: 20px;
+  border: 3px;
+  padding: 8px 16px;
+}
+
+#submit {
+  width: 420px;
+}
+
+.menu-button{
+  background-color: #003bd1;
+  color: white; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.inline{
+  display: inline;
+}
+
+.footer-container {
+  margin: auto;
+  /*width: 100%;*/
+}
+
+#logo {
+  display: inline;
+  height: 40px;
+}
+
+
+#app {
+  padding: 5%;
+  background-color: #edf3ff !important;
+  min-width: 600px;
+  min-height: 760px;
+  height: 90vh;
+}
+
 #footer {
-    width: 100%;
-    border-top: solid 2px black;
-    background-color: white;
-    position: fixed;
-    bottom: 0;
+  width: 100%;
+  padding-top: 24px; 
+  height: 10vh;
+  background-color: white;
+  font-size: 13px !important;
 }

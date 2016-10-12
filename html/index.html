@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     
+    <meta http-equiv="refresh" content="30">
     <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Guessing Game</title>
 
   </head>
@@ -10,50 +13,55 @@
 
       <div id='app'>
 
-        <div id='headers'>
-          <h1>Llama Says, "Guess a Number"</h1>
-          <h2>Between 1 and 100</h2>
-          <h3>Obey the llama.</h3>
+        <div id='headers' class="container">
+
+          <button type="button" class="menu-button">?</button>
+          <button type="button" class="menu-button">
+            <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+          </button>
+
+          <h1 class="blue center">Guess (Almost) Any Number</h1>
+          <h3 class="pink center">From 1 to 100</h2>
         </div>
 
-        <div id='main'>
-          <div id='input-parent'>
-            <input type="text" placeholder="1 to 100" />
+        <div id='main' class="center container" >
+         
+          <div class="inline">
+            <div id='input-parent'>
+              <input id="player-input" type="text" class="center" placeholder="#" maxlength="3" />
+            </div>
+            <button id="submit">Guess!</button>
           </div>
-
+        
           <div id='guesses'>
-            <h3>Previous Guesses:</h3>
-
-            <ul>Guess one!</ul>
-            <ul>Guess two!</ul>
-            <ul>Guess three!</ul>
-          </div>
-
-          <div id="menu-btns">
-            <button>Reset</button>
-            <button>Get a Hint From the Llama</button>
+            <!-- <h3 class="blue">Previous Guesses:</h3> -->
+            <ul>
+              <li class="guess">__</li>
+              <li class="guess">__</li>
+              <li class="guess">__</li>
+              <li class="guess">__</li>
+              <li class="guess">__</li>
+          </ul>
           </div>
         </div>
       </div>
 
 
 
-    <div id='footer'>
-        <div>
-          <div class=''>
-            <img src='fa-logo@2x.png'></img>
-          </div>
-
-          <div class=''>
-            <h4>Project by Claire, Llama Queen</h4>
-          </div>
-
-          <div class=''>
-            <img src='grace_hopper_academy.png'></img>
-          </div>
-
-
+    <div id='footer' class="center container">
+      <div class="container footer-container">
+        <div class='col-sm-4'>
+          <img src='fa-logo@2x.png' id="logo"></img>
         </div>
+
+        <div class='col-sm-4'>
+          <p><b>Project by Claire<br /><u>Llama Queen</u></b></p>
+        </div>
+
+        <div class='col-sm-4'>
+          <img src='grace_hopper_academy.png' id="logo"></img>
+        </div>
+      </div>
     </div>
 
   </body>
